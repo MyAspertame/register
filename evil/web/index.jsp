@@ -12,6 +12,7 @@
 
 <body>
 <h1>购物登录界面</h1>
+<h2>请先注册</h2>
 <hr>
 
 <a href="${pageContext.request.contextPath}/Register.jsp"><input type="button" value="注册"></a>
