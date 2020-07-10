@@ -16,5 +16,6 @@
 <a href="${pageContext.request.contextPath}/logout"><input type="button" value="注销账户"></a>
 
 <a href="${pageContext.request.contextPath}/index.jsp"><input type="button" value="返回首页"></a>
+<a href="${pageContext.request.contextPath}/shop.jsp"><input type="button" value="进入购物"></a>
 </body>
 </html>
