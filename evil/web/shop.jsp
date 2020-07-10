@@ -51,7 +51,7 @@
         <td>166</td>
         <td>82%</td>
         <td align="center">
-            <input type="button" value="加入购物车" onclick="add_shoppingcar(this)and "/>
+            <input type="button" value="加入购物车" onclick="add_shoppingcar(this)"/>
         </td>
     </tr>
     <tr>
