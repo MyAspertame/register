@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
         String name = (String)session.getAttribute("s_username");
         String pwd = (String)session.getAttribute("s_password1");
         if(username.equals(name)&&password.equals(pwd)){
-            request.getRequestDispatcher("shop.jsp").forward(request, response);
+            request.getRequestDispatcher("success.jsp").forward(request, response);
         }
         else{
             session.setAttribute("loginError","false");
