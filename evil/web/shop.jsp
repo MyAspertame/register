@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,36 +8,36 @@
 <style type="text/css">
     h1{
         text-align: center;
+        color: red;
     }
     table{
         margin: 0 auto;
     }
     body{
-        font-size: larger;color:blue;
-        background-image: url(img/2.jpg);
+        font-size: x-large;color:deepskyblue;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size:80%;
     }
     table th,table td{
 
     }
 </style>
 <body >
-<h1>购物车byLD</h1>
+<h1>购物车系统</h1>
 <table border="1" >
     <tr>
         <!--文本th-->
         <th>商品</th>
         <th>单价</th>
-        <th>客户人群</th>
+        <th>来自地区</th>
         <th>库存</th>
         <th>好评率</th>
         <th>操作</th>
     </tr>
     <tr>
         <td>苹果</td>
-        <td>150</td>
-        <td>大人</td>
+        <td>20</td>
+        <td>福建</td>
         <td>100</td>
         <td>88%</td>
         <td align="center">
@@ -46,18 +46,18 @@
     </tr>
     <tr>
         <td>香蕉</td>
-        <td  >350</td>
-        <td>大人</td>
+        <td>15</td>
+        <td>江苏</td>
         <td>166</td>
         <td>82%</td>
         <td align="center">
-            <input type="button" value="加入购物车" onclick="add_shoppingcar(this)"/>
+            <input type="button" value="加入购物车" onclick="add_shoppingcar(this)and "/>
         </td>
     </tr>
     <tr>
         <td>葡萄</td>
-        <td >150</td>
-        <td>大人</td>
+        <td>25</td>
+        <td>安徽</td>
         <td>99</td>
         <td>75%</td>
         <td align="center">
@@ -66,8 +66,8 @@
     </tr>
     <tr>
         <td>梨</td>
-        <td>120</td>
-        <td>小孩</td>
+        <td>18</td>
+        <td>山西</td>
         <td>50</td>
         <td>80%</td>
         <td align="center">
@@ -75,7 +75,7 @@
         </td>
     </tr>
 </table>
-<h1> 结算【淘宝】</h1>
+<h1> 结算购物总价格</h1>
 <table border="1">
     <thead>
     <tr>
@@ -120,14 +120,13 @@
             "</tr>"
         total();
     }
-    //增加减少数量，用n正负1来表示点击了加减按钮
+
     function change(btn,n){
-        //获取数量的三个input对象
+
         var inputs = btn.parentNode.getElementsByTagName("input");
-        //获取原来的数量
+
         var amount = parseInt(inputs[1].value);
-        //当amount=1时不能再点击"-"符号
-        //用n<0来表示点击了减button
+
         if(amount<=1 && n<0){
             return;
         }
@@ -157,8 +156,9 @@
     function del(i){
         var tr=i.parentNode.parentNode;
         tr.parentNode.removeChild(tr);
-        //tr.remove(tr);
+        
         total();
     }
 </script>
 </html>
+  
